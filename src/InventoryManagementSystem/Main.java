@@ -38,6 +38,7 @@ public class Main extends Application {
         Scene mainScene = new Scene(root, stageInitialSizeX, stageInitialSizeY);
         primaryStage.setScene(mainScene);
         mainScene.getRoot().requestFocus();
+        // mainScene.getStylesheets().add(Properties.getAPPLICATION_STYLESHEET());
         primaryStage.show();
     }
 }
