@@ -1,5 +1,7 @@
 package InventoryManagementSystem;
 
+import javafx.scene.image.Image;
+
 public class Properties {
     // Esses valores são usados em todo o aplicativo e são consolidados aqui para
     // fácil modificação global e consistência.
@@ -23,6 +25,8 @@ public class Properties {
     private static final String TABLE_PLACEHOLDER_MESSAGE = "Use the Add button to populate this table";
     // A mensagem que diz ao usuário para selecionar um elemento.
     private static final String TELL_USER_TO_SELECT_ELEMENT_MESSAGE = "ERROR: Please select an element from the table to perform that action.";
+    // O ícone do aplicativo.
+    private static final Image APPLICATION_ICON = new Image("file:src/InventoryManagementSystem/Assets/Icons/InventoryIcon.png");
 
     /**
      * @return o nome do aplicativo
@@ -85,5 +89,9 @@ public class Properties {
      */
     public static String getTELL_USER_TO_SELECT_ELEMENT_MESSAGE() {
         return TELL_USER_TO_SELECT_ELEMENT_MESSAGE;
+    }
+
+    public static Image getAPPLICATION_ICON() {
+        return APPLICATION_ICON;
     }
 }

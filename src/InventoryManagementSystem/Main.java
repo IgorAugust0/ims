@@ -33,6 +33,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(mainSceneFXMLPath));
+        primaryStage.getIcons().add(Properties.getAPPLICATION_ICON());
         primaryStage.setTitle(Properties.getAPPLICATION_NAME_AND_VERSION());
         Scene mainScene = new Scene(root, stageInitialSizeX, stageInitialSizeY);
         primaryStage.setScene(mainScene);
