@@ -86,11 +86,7 @@ public class Product {
      * @param associatedPart Uso: Remove a peça fornecida das peças do produto.
      */
     public void removeAssociatedPart(Part associatedPart) {
-        for (int i = 0; i < associatedParts.size(); i++) {
-            if (associatedParts.get(i) == associatedPart) {
-                associatedParts.remove(i);
-            }
-        }
+        associatedParts.removeIf(part -> part == associatedPart);
     }
 
     /**
