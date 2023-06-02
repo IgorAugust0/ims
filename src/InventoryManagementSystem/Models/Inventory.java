@@ -20,6 +20,8 @@ public class Inventory {
      * @param partToBeRemoved Uso: Exclui a peça dada da lista de peças.
      */
     public static void deletePart(Part partToBeRemoved) {
+        // removeIf() é um método padrão de coleções que remove um elemento se o predicado fornecido for verdadeiro.
+        // é mais otimizado do que usar um loop for/foreach.
         parts.removeIf(part -> part.equals(partToBeRemoved));
     }
 
