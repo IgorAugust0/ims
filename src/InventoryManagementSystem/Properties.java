@@ -27,6 +27,8 @@ public class Properties {
     private static final String TELL_USER_TO_SELECT_ELEMENT_MESSAGE = "ERROR: Please select an element from the table to perform that action.";
     // O ícone do aplicativo.
     private static final Image APPLICATION_ICON = new Image("file:src/InventoryManagementSystem/Assets/Icons/InventoryIcon.png");
+    // Estilo CSS para o aplicativo.
+    // private static final String APPLICATION_STYLESHEET = "file:src/InventoryManagementSystem/Assets/styles/styles.css";
 
     /**
      * @return o nome do aplicativo
@@ -91,7 +93,17 @@ public class Properties {
         return TELL_USER_TO_SELECT_ELEMENT_MESSAGE;
     }
 
+    /**
+     * @return o ícone do aplicativo
+     */
     public static Image getAPPLICATION_ICON() {
         return APPLICATION_ICON;
     }
+    
+    /**
+     * @return o estilo CSS do aplicativo
+     */
+    // public static String getAPPLICATION_STYLESHEET() {
+    //     return APPLICATION_STYLESHEET;
+    // }
 }
