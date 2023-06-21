@@ -27,7 +27,7 @@ CREATE TABLE inhouse_part
 CREATE TABLE outsourced_part
 (
     part_id     INT PRIMARY KEY,
-    companyName VARCHAR(255) NOT NULL,
+    company_name VARCHAR(255) NOT NULL,
     FOREIGN KEY (part_id) REFERENCES part (part_id)
 );
 
