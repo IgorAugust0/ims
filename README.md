@@ -1,6 +1,4 @@
-# ims
-
-Inventory Management System
+# Inventory Management System
 
 ## IntelliJ Diagram
 
