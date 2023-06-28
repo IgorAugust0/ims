@@ -4,7 +4,7 @@ Inventory Management System
 
 ## IntelliJ Diagram
 
-![Class Diagram](https://raw.githubusercontent.com/IgorAugust0/ims/a0f835b32b58b3d90d85d68dfeeb0b27ba304fee/inventory_manager.png?token=GHSAT0AAAAAAB7MTVGSWHM2SHN46CGRSIVEZEZU75Q)
+![Class Diagram](https://raw.githubusercontent.com/IgorAugust0/ims/main/inventory_manager.png?token=GHSAT0AAAAAAB7MTVGTATUE2NADKV2JFK26ZE4GU7A)
 
 ## Mermaid Diagram
 
