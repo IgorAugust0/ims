@@ -3,10 +3,12 @@ package InventoryManagementSystem.Controllers;
 import InventoryManagementSystem.Models.InhousePart;
 import InventoryManagementSystem.Models.Inventory;
 import InventoryManagementSystem.Models.OutsourcedPart;
+import InventoryManagementSystem.Models.Part;
 import InventoryManagementSystem.Properties;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 // import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -36,7 +38,7 @@ public class AddPartController implements Initializable {
     // A HBox FXML que contém o campo de texto da empresa.
     @FXML
     private HBox companyNameHBox, machineIDHBox;
-    // O botão de rádio FXML que seleciona a peça como sendo feita na própria
+    // O botão de radio FXML que seleciona a peça como sendo feita na própria
     // empresa.
     @FXML
     private RadioButton inHouseRadioButton;
@@ -48,14 +50,31 @@ public class AddPartController implements Initializable {
      *                  Inicializa a cena.
      */
     @Override
+
     public void initialize(URL location, ResourceBundle resources) {
-        int id = Inventory.getParts().size() + 1;
+        List<Part> parts = Inventory.getParts();
+        int id = 1;
+        for (Part part : parts) {
+            if (part.getPartId() >= id) {
+                id = part.getPartId() + 1;
+            }
+        }
         inHouseRadioButton.setSelected(true);
         companyNameHBox.setVisible(false);
         machineIDHBox.setVisible(true);
         idTextField.setText(String.valueOf(id));
         errorLabel.setVisible(false);
     }
+
+    // public void initialize(URL location, ResourceBundle resources) {
+    // int index = Inventory.getParts().size();
+    // int id = Inventory.getParts().get(index).getId() + 1;
+    // inHouseRadioButton.setSelected(true);
+    // companyNameHBox.setVisible(false);
+    // machineIDHBox.setVisible(true);
+    // idTextField.setText(String.valueOf(id));
+    // errorLabel.setVisible(false);
+    // }
 
     /**
      * @param event Uso: Chamado quando o usuário pressiona o botão cancelar.
@@ -80,7 +99,7 @@ public class AddPartController implements Initializable {
     }
 
     /**
-     * @param event Uso: Chamado quando o usuário seleciona um botão de rádio no
+     * @param event Uso: Chamado quando o usuário seleciona um botão de radio no
      *              grupo de alternância do tipo de peça.
      *              Altera os campos e rótulos que são exibidos.
      */

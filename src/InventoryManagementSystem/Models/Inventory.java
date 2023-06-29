@@ -42,7 +42,7 @@ public class Inventory {
     }
 
     /**
-     * @return the products.
+     * @return os produtos
      *         Uso: Retorna todos os produtos.
      */
     public static ObservableList<Product> getProducts() {
@@ -50,7 +50,7 @@ public class Inventory {
     }
 
     /**
-     * @return the parts
+     * @return as peças
      *         Uso: Retorna todas as peças.
      */
     public static ObservableList<Part> getParts() {

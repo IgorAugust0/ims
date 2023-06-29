@@ -98,7 +98,7 @@ public class Product {
     }
 
     /**
-     * @return the product's parts
+     * @return as partes do produto
      *         Uso: Retorna as peças do produto
      */
     public ObservableList<Part> getAssociatedParts() {
