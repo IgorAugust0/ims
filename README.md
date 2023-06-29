@@ -1,10 +1,8 @@
-# ims
-
-Inventory Management System
+# Inventory Management System
 
 ## IntelliJ Diagram
 
-![Class Diagram](https://raw.githubusercontent.com/IgorAugust0/ims/main/inventory_manager.png?token=GHSAT0AAAAAAB7MTVGTATUE2NADKV2JFK26ZE4GU7A)
+![Class Diagram](inventory_manager.png)
 
 ## Mermaid Diagram
 
